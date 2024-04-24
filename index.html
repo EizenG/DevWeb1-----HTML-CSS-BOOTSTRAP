@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Michel Junior Delanoue et Mouhamed Camara">
+        <meta name="description" content="Reproduction d'une partie du site de l'IPSL">
+        <link rel="shortcut icon" href="assets/logo-ipsl.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/27ad2b4f60.js" crossorigin="anonymous"></script>
+        <title>IPSL website homePage</title>
+    </head>
+    <body>
+        <div class ="container-fluid band-marron band-top"></div>
+        <header>
+            <nav class="navbar navbar-expand-lg mb-3 pb-0 ">
+                <div class="container-fluid container-xxl px-lg-3 px-0 justify-content-md-start column-gap-lg-3">
+                    <a href="#" class="navbar-brand me-1 me-lg-0 text-end">
+                        <img class="logo" src="assets/logo-ipsl.png" alt="Logo IPSL">
+                    </a>
+                    
+                    <button class="navbar-toggler collapsed ps-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapsibleContent" aria-controls="navbarCollapsibleContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa-solid fa-xmark close"></i>
+                    </button>
+                    <div class="collapse navbar-collapse order-md-last justify-content-xl-center" id="navbarCollapsibleContent">
+                        <ul class="navbar-nav justify-content-end flex-wrap">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link ps-3 py-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    IPSL
+                                </a>
+                                <ul class="dropdown-menu py-0">
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Presentation</a></li>
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Personnel enseignant et de recherche</a></li>
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Personnel administratif</a></li>
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Organigramme</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link ps-3 py-3"  href="#">Cycle Préparatoire Intégré</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link ps-3 py-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cycles ingénieurs
+                                </a>
+                                <ul class="dropdown-menu py-0">
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Genie electromecanique</a></li>
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Genie civil</a></li>
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Genie informatique et telecom</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link ps-3 py-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ressources
+                                </a>
+                                <ul class="dropdown-menu py-0">
+                                    <li><a class="dropdown-item ps-4 py-3 fw-medium" href="#">Le Fab lab</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link ps-3 py-3" href="#">Partenaires</a></li>
+                        </ul>
+                    </div>
+                    <a class="d-none d-md-inline ms-md-auto me-md-3 me-lg-0 order-lg-last" id="contact-link" href="#">Contact</a>
+                </div>
+            </nav>
+            <div  class="carousel-overlay carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+                <div class="container-fluid container-xl px-0 position-absolute h-100 z-3 d-flex align-items-center">
+                    <aside class="rounded-5 d-flex flex-column justify-content-around align-items-center ps-sm-4">
+                        <i class="fa-regular fa-rectangle-list" style="color: #a32e00; font-size: 62px;"></i>
+                        <h3 class="text-center fs-2">Résultats concours d'entrée 2022-2023</h3>   
+                        <ul class="list-unstyled">
+                            <li><a href="#">Liste principale</a></li>
+                            <li><a href="#">Liste d'attente</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-img1 carousel-item active"> </div>
+                  <div class="carousel-img2 carousel-item"></div>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="container-fluid container-xxl p-0 my-5" id="section-directeur">
+            <div class="row w-100 p-0 mx-0">
+                <div class="p-3 p-md-5 col-lg-6 col-xl-7">
+                    <h2 class="mb-4 fs-6 fw-bold">INSTITUT POLYTECHNIQUE DE SAINT-LOUIS</h2>
+                    <h1 class="mb-4 fs-2 fw-bold">Mot de bienvenue</h1>
+                    <p class="lh-lg">
+                        L’Institut Polytechnique de Saint-Louis (IPSL), est l’école d’ingénieurs de l’université Gaston Berger 
+                        de Saint-Louis. L’offre de formation de l’IPSL couvre actuellement trois cursus d’ingénieur de conception
+                        dans les spécialités génie civil, génie mécanique et génie informatique-télécommunications.
+                    </p>
+                    <p class="lh-lg">
+                        Sur le plan historique, l’institut est créé par les pouvoirs publics, par décret n°2010-1455 du 5 novembre 2010
+                        et a ouvert ses portes à sa première cohorte en octobre 2012.
+                    </p>
+                    <p class="lh-lg">
+                        Sur le plan réglementaire, l’IPSL est depuis janvier 2019, par décret n° 2019-109, élevé au rang académique des
+                        grandes écoles polytechniques tout en l’ouvrant aux mutations imposées par le système Licence, Master et
+                        Doctorat (LMD) et du développement scientifique et technologique.
+                        <div id="lireSuite" class="text-end mt-4"><a class="fw-bold text-decoration-none" href="#">Lire suite >></a></div>
+                    </p>
+                </div>
+                <div class="px-3 ps-lg-0 position-relative col-lg-6 col-xl-5">
+                    <div class="d-flex flex-column flex-md-row row-gap-3 column-gap-4 justify-content-lg-end">
+                        <img class="w-100"  src="assets/fallilou-coundoul.jpg" alt="photo du directeur de l'ipsl">
+                        <div class ="w-100 band-marron section-directeur-band"></div>
+                    </div>
+                    <h3 class="fw-medium bg-white text-center d-flex flex-column justify-content-center align-items-center mb-0 position-absolute"><span class="fs-5">Falilou Coundoul</span> <span class="h3-span2-section-directeur fs-6">DIRECTEUR</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="position-relative container-fluid px-0 d-flex align-items-center align-items-md-end justify-content-center" id="section-performance">
+            <div class="position-relative w-100 container z-2 d-flex flex-column justify-content-around align-items-center">
+                <img class="align-self-end align-self-md-center mb-3" src="assets/logo-ipsl-fil.png" alt="logo ipsl blanc">
+                <p class="text-white fs-4 text-center">
+                    Nos critères de performance sont l’insertion des diplômés sur le marché du travail, l’ouverture à 
+                    l’international, la recherche et la place de l’entrepreneuriat.
+                </p>
+                <hr class="border border-white">
+            </div>
+        </section>
+
+        <section id="formation" class="container-fluid container-xxl d-flex flex-column justify-content-center py-5">
+            <h1 class="text-center mb-0"><span class="fs-6 d-block fw-bold mb-3">FORMATION</span> <span class="fs-1">Nos filères</span></h1>
+            <div class="formation-box d-flex flex-column flex-md-row gap-3 w-100 mt-5">
+                <div class="formation-box-item position-relative w-100 pb-2 d-flex flex-column align-items-center justify-content-center gap-4">
+            
+                    <div class="circle-img rounded-circle p-3 mt-1"><img src="assets/building-regular.svg" alt="logo building"></div>
+                    <h2 class="fs-4 text-center w-100">Génie civil</h2>
+                    <p class="lh-base mb-3 text-center w-75">
+                        Former des ingénieurs opérationnels, capables de concevoir et de mettre en œuvre des moyens
+                        matériels et humains nécessaires à l’acte de construire ...
+                    </p>
+                    <a class="text-white" href="">Découvrir</a>
+                </div>
+                <div class="formation-box-item position-relative w-100 pb-2 d-flex flex-column align-items-center justify-content-center gap-4">
+                    
+                    <div class="circle-img rounded-circle p-3 mt-1"><img src="assets/bolt-lightning-solid.svg" alt="logo bolt"></div>
+                    <h2 class="fs-4 text-center w-100">Génie électromécanique</h2>
+                    <p class="lh-base mb-3 text-center w-75">
+                        Former des ingénieurs polyvalents dans les domaines de l’électrique et de la mécanique. La
+                        formation offerte est pluridisciplinaire (mécanique, électricité, électronique, automatique)...
+                    </p>
+                    <a class="text-white" href="">Découvrir</a>
+                </div>
+                <div class="formation-box-item position-relative w-100 pb-2 d-flex flex-column align-items-center justify-content-center gap-4">
+                    <div class="circle-img rounded-circle p-3 mt-1"><img src="assets/satellite-dish-solid.svg" alt=""></div>
+                    <h2 class="fs-4">Génie informatique</h2>
+                    <p class="lh-base mb-3 text-center w-75 text-center w-100">
+                        Donner aux élèves ingénieurs des compétences dans les domaines complémentaires qui leur
+                        permettent d’être en phase avec l’avancée technologique
+                    </p>
+                    <a class="text-white" href="">Découvrir</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="join_ipsl" class="position-relative">
+            <div id="join-container" class="container-fluid container-xl px-0 ps-md-5 position-relative z-2">
+                <h1 class="fs-1 fw-bold text-white pt-5">Rejoindre l'IPSL</h1>
+                <div class="join_ipsl-box mx-2 mt-4 row">
+                    <div class="join_ipsl-box-item col-12 col-md-5 me-md-3 mb-4 mb-md-3 p-3 ">
+                        <img src="assets/verified.png" alt="verifie">
+                        <h2><a class="text-white text-decoration-none" href="">Concours d'entrée</a></h2>
+                        <p class="text-white">L’admission des étudiants en première année du cycle préparatoire intégré ...</p>
+                    </div>
+                    <div class="join_ipsl-box-item col-12 col-md-5 p-md-3 mb-4 mb-md-3 p-3">
+                        <img src="assets/verified.png" alt="verifie">
+                        <h2><a class="text-white text-decoration-none" href="">Formation payante</a></h2>
+                        <p class="text-white">Peuvent être admis en premier année du cycle ingénieur, soit après examen de dossiers ...</p>
+                    </div>
+                    <div class="join_ipsl-box-item col-12 col-md-5 me-md-3 mb-4 mb-md-5 p-3">
+                        <img src="assets/verified.png" alt="verifie">
+                        <h2><a class="text-white text-decoration-none" href="">Admission</a></h2>
+                        <p class="text-white ">Le cycle ingénieur est accessible aux étudiants du cycle préparatoire ou sur concours à ...</p>
+                    </div>
+                    <div class="join_ipsl-box-item col-12 col-md-5 mb-5 p-3">
+                        <img src="assets/verified.png" alt="verifie">
+                        <h2><a class="text-white text-decoration-none" href="">Débouchés</a></h2>
+                        <p class="text-white ">L'institut est tourné vers la formation professionnelle dans les domaines ..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="actu" class="pb-3">
+            <h1 class="text-center my-5 fs-1 fw-bold">Actualité</h1>
+            <div class="actu-box container-fluid container-xxl d-flex flex-column flex-md-row flex-md-wrap flex-lg-nowrap gap-4">
+                <div class="actu-box-item">
+                    <img src="assets/batiment-ipsl-1-768x365.jpg" alt="batiment">
+                    <h2 class="mt-3 fs-5 fw-bold"><a class="text-decoration-none actu_text " href="">Appel à candidature formation payante</a>  <span class="d-block fs-6 opacity-50 mt-3">20 octobre 2022</span> </h2>
+                    <a class="text-decoration-none actu_lire d-inline-block fw-bold fs-6 mt-4" href="">Lire >></a>
+                </div>
+                <div class="actu-box-item">
+                    <img src="assets/2022_CA_IPSL_9_GF-768x512.jpg" alt="2022 CA IPSL">
+                    <h2 class="mt-3 fs-5 fw-bold"><a class="text-decoration-none actu_text" href="">Cérémonie d’installation du Conseil d’Administration de l’IPSL</a> <span class="d-block fs-6 opacity-50 mt-3 fw-bold">30 avril
+                            2022</span></h2>
+                    <a class="text-decoration-none actu_lire d-inline-block fw-bold fs-6 mt-4" href="">Lire >></a>
+                </div>
+                <div class="actu-box-item">
+                    <img src="assets/CABINE_IPSL_KHADIM_4-767x1024.jpg" alt="CABINE IPSL">
+                    <h2 class="mt-3 fs-5 fw-bold"><a class="text-decoration-none actu_text" href="">Innovation : un élève ingénieur de l’IPSL réalise une cabine de désinfectant pour lutter
+                        contre la Covid-19.</a> <span class="d-block fs-6 opacity-50 mt-3 fw-bold">26 avril 2022</span></h2>
+                    <a class="text-decoration-none actu_lire d-inline-block fw-bold fs-6 mt-4" href="">Lire >></a>
+                </div>
+            </div>
+            <div class="container-fluid container-xxl text-md-center"><a href="" class ="actualite p-3 text-decoration-none d-inline-block fs-6 fw-bold mt-5 text-center">Toute l'actualité</a></div>
+        </section>
+
+        <section id="fablab" class="text-white position-relative mt-5">
+           
+            <div class="container-fluid border border-black container-xxl py-4 px-xxl-0 p-md-5 d-flex flex-column flex-lg-row column-gap-lg-2 column-gap-xxl-5 align-items-center justify-content-center">
+                <div class="fablab-item position-relative z-2">
+                    <h1><span class="mb-2 fs-6 text-white">IPSL</span> <br> <span class="text-white fw-medium lh-lg">Le Fab Lab</span></h1>
+                    <p class="mb-5">
+                        Le Fab Lab de L’IPSL a pour mission de promouvoir les nouvelles technologies, leur utilisation et de
+                        donner accès à une culture scientifique à tous nos élèves ingénieurs.<br>
+                        Il a également pour vocation de favoriser l’invention, la création et l’innovation.               
+                    </p>
+                   <div id="fablab_ipsl_blanc"><img src="assets/logo-ipsl-blanc.png" alt="logo ipsl blanc"></div> 
+                </div>
+                <div class="fablab-item position-relative z-2 ">
+                    <img class="w-100 pt-5" src="assets/fablab-2048x1283.png" alt="fablab">
+                    <a class="text-decoration-none text-white text-center d-block ms-4 mt-3 py-2" href="#">Découvrir</a>
+                </div>
+            </div>
+            <div class="background-overlayV2"></div>
+        </section>
+
+        <section id="pfe" class="d-flex flex-column pb-4 justify-content-evenly row-gap-4">
+            <h1 class="text-center pt-5 pb-2 fs-1">Projets de Fin d'Etudes</h1>
+            <div class="pfe-box container-fluid container-xxl d-flex flex-column flex-md-row flex-md-wrap justify-content-between align-items-center gap-4">
+                <div class="pfe-box-item w-100 text-center">
+                    <a href=""><img class="w-100 mb-2" src="assets/papa-oumar-thiam-768x543.jpeg" alt="pfe de Papa Oumar"></a>
+                    <h2><a class="text-decoration-none fs-5" href="">PFE : Papa Oumar Thiam</a> <span class="d-block fs-6">9 novembre 2022</span></h2>
+                </div>
+                <div class="pfe-box-item w-100 text-center">
+                    <a href=""><img class="w-100 mb-2" src="assets/ndeye-ngone-wade-768x543.jpeg" alt="pfe de Ngone wade"></a>
+                    <h2><a class="text-decoration-none fs-5" href="">PFE : Ndèye Ngoné WADE</a> <span class="d-block fs-6">22 juin 2022</span></h2>
+                </div>
+                <div class="pfe-box-item w-100 text-center">
+                    <img class="w-100 mb-2" src="assets/abdoulaye-koita-768x542.jpeg" alt="pfe de abdoulaye koita">
+                    <h2><a class="text-decoration-none fs-5" href="">PFE : Abdoulaye KOITA </a><span class="d-block fs-6">14 juin 2022</span></h2>
+                </div>
+            </div> 
+        </section>
+
+        <section id="partenaires" class="container-fluid mb-5 px-0">
+                <figure>
+                    <figcaption class="fw-bold fs-3 text-center py-5">Nos partenaires</figcaption>
+                    <div class="carousel carousel-1 slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item partenaire-carousel-item active">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="d-block w-100" src="assets/logo-5-1.png" alt="drapeau du senegal">
+                                        </div>
+                                        <div class="col-6">
+                                            <img class="d-block w-100" src="assets/logo-4-1.png" alt="technosol ingenierie">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item partenaire-carousel-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="d-block w-100" src="assets/logo-3-1.png" alt="ceamitic">
+                                        </div>
+                                        <div class="col-6">
+                                            <img class="d-block w-100" src="assets/logo-2-1.png" alt="saed">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item partenaire-carousel-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img class="d-block w-100" src="assets/logo-1-1.png" alt="total energy">
+                                        </div>
+                                        <div class="col-6">
+                                            <img class="d-block w-100" src="assets/logo-6.png" alt="universite gaston berger">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="carousel carousel-2 slide d-none" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item partenaire-carousel-item active">
+                                    <div class="row">
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-5-1.png" alt="drapeau du senegal">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-4-1.png" alt="technosol ingenierie">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-3-1.png" alt="ceamitic">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-2-1.png" alt="saed">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-1-1.png" alt="total energy">
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item partenaire-carousel-item">
+                                    <div class="row">
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-6.png" alt="universite gaston berger">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-5-1.png" alt="drapeau du senegal">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-4-1.png" alt="technosol ingenierie">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-3-1.png" alt="ceamitic">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-2-1.png" alt="saed">
+                                            </div>   
+                                    </div>
+                              </div>
+                            </div>
+                          
+                        </div>
+
+                        <div class="carousel carousel-3 slide d-none" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item partenaire-carousel-item active">
+                                    <div class="row">
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-5-1.png" alt="drapeau du senegal">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-4-1.png" alt="technosol ingenierie">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-3-1.png" alt="ceamitic">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-2-1.png" alt="saed">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-1-1.png" alt="total energy">
+                                            </div>
+                                            <div class="col">
+                                                <img class="d-block w-100" src="assets/logo-6.png" alt="universite gaston berger">
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item partenaire-carousel-item">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img class="d-block w-100" src="assets/logo-5-1.png" alt="drapeau du senegal">
+                                        </div>
+                                        <div class="col">
+                                            <img class="d-block w-100" src="assets/logo-4-1.png" alt="technosol ingenierie">
+                                        </div>
+                                        <div class="col">
+                                            <img class="d-block w-100" src="assets/logo-3-1.png" alt="ceamitic">
+                                        </div>
+                                        <div class="col">
+                                            <img class="d-block w-100" src="assets/logo-2-1.png" alt="saed">
+                                        </div>
+                                        <div class="col">
+                                            <img class="d-block w-100" src="assets/logo-1-1.png" alt="total energy">
+                                        </div>
+                                        <div class="col">
+                                            <img class="d-block w-100" src="assets/logo-6.png" alt="universite gaston berger">
+                                        </div>
+                                    </div>
+                              </div>
+                            </div>
+                          
+                        </div>
+                </figure>
+        </section>
+
+        <div class=" position-relative mt-5 pt-5 address-footer ">
+            <div class="container-fluid container-lg">
+                <address id="adr" class="mb-0 py-4 w-100 py-lg-5 px-0 d-flex flex-column flex-md-row justify-content-md-around col-md-11  m-md-auto col-lg-10 justify-content-lg-around position-relative">
+                    <div class="d-flex px-4">
+                        <div class="img-container me-2 d-flex"><img src="assets/phone-solid.svg" alt="telephone"></div>
+                        <p>
+                            <h2 class="fs-5 d-flex flex-column">Téléphone
+                            <span class="adresse fs-6">+221 33 960 00 39</span></h2>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex px-4">
+                        <div class="img-container d-flex me-2"><img src="assets/envelope-solid.svg" alt="email"></div>
+                        <p>
+                            <h2 class="fs-5 d-flex flex-column">Email
+                            <span class="adresse fs-6">ipsl@ugb.edu.sn</span></h2>
+                        </p>
+                    </div>
+                    <div class="d-none d-lg-flex">
+                        <div class="img-container me-2 d-flex"><img src="assets/location-dot-solid.svg" alt="location"></div>
+                        <p>
+                            <h2 class="fs-5 d-flex flex-column">Adresse
+                            <span class="adresse">Université Gaston Berger</span></h2>
+                        </p>
+                    </div>
+                </address>
+            </div>
+            <footer class="pb-4 pt-4 text-white pt-md-5 w-100">
+                    <div class="container-fluid container-lg">
+                        <div class="ps-0 row mx-auto footer-child">
+                            <div class="footer-abonnement container px-4 px-md-5 px-lg-2 pt-5 mb-2 text-md-center col-lg-4 mx-lg-0">
+                                <h2 class="mb-4 fs-5 pt-md-4 text-center text-lg-start text-white ">Abonnement Newsletters</h2>
+                                <p class="fs-6 text-center text-lg-start">pour rester informé des concours, appels à candidatures et autres informations de l'Institut</p>
+                                <div class="d-md-flex">
+                                    <input class="p-2 w-100 mb-2 mb-md-0" type="email" name="email" id="email" placeholder="Email">
+                                    <input class="footer-button p-2 w-100 fw-bold text-white border-0" type="submit" value="OK">
+                                </div>
+                            </div>
+                            <div class="container ps-lg-3 mb-0 mx-md-5 px-4 pt-lg-5 px-md-0 lh-lg col-md-4 col-lg-4 mx-lg-0">
+                                <h2 class="mb-4 mt-5 mt-lg-0 pt-lg-4 fs-5 text-white">Formations</h2>
+                                <ul class="ps-3">
+                                    <li><a class="text-white text-decoration-none" href="">Cycle Préparatoire Intégré</a></li>
+                                    <li><a class="text-white text-decoration-none" href="">Cycle Electromécanique</a></li>
+                                    <li><a class="text-white text-decoration-none" href="">Cycle Informatique Télécom</a></li>
+                                    <li><a class="text-white text-decoration-none" href="">Cycle Génie Civil</a></li>
+                                </ul>
+                            </div>
+                            <div class="container mb-3 ps-lg-3 mx-md-0 px-4 pt-lg-5 px-md-0 col-md-4 lh-lg col-lg-4">
+                                <h2 class="mb-4 ps-0 ms-0 mt-5 mt-lg-0 pt-lg-4 fs-5 text-white">Liens</h2>
+                                <ul class="ps-3">
+                                    <li><a class="text-white text-decoration-none" href="#">Ministère de l'Enseignement Supérieur, de la Recherche et de l'Innovation</a></li>
+                                    <li><a class="text-white text-decoration-none" href="#">Université Gaston Berger</a></li>
+                                    <li><a class="text-white text-decoration-none" href="#">ANAQ-SUP</a></li>
+                                    <li><a class="text-white text-decoration-none" href="#">CAMES</a></li>
+                                </ul>
+                                <address class="mt-5">
+                                    <a href="#" class="p-3 rounded "><i class="fa-brands fa-facebook fs-4" style="color: #ffffff;" ></i></a>
+                                    <a href="#" class="p-3 rounded"><i class="fa-brands fa-twitter fs-4" style="color: #ffffff;"></i></a>
+                                    <a href="#" class="p-3 rounded"><i class="fa-brands fa-instagram fs-4" style="color: #ffffff;"></i></a>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="container-fluid px-2 mx-md-0 mb-0 d-flex flex-column flex-md-row flex flex-wrap align-items-center justify-content-between">
+                        <img class="img-fluid mt-2 mb-3" src="assets/logo-ipsl-blanc.png" alt="logo-ipsl-blanc">
+                        <span class="order-md-first">Copyright © 2022 - Centre de Calcul Ousmane Seck</span>
+                    </p>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    </body>
+</html>

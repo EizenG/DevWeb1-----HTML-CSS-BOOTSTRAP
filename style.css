@@ -1,0 +1,706 @@
+/*Importation de fonts*/
+@font-face {
+    font-family: heboo;
+    src: url("fonts/Heebo-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: inter;
+    src: url("fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: comforta;
+    src: url(fonts/Comfortaa-Light.ttf) format("truetype");
+}
+/*FIN*/
+:root{
+    --color-marron:rgb(179,92,52);
+    --color-redMarron : rgb(163,46,0);
+    --navBar-heigth : 120px;
+    --textColor-lightDark:#041811;
+    --textColor-lightDarkLowOpacity:rgba(4, 24, 17,0.6);
+    --fontFamilly-Heebo : heboo;
+    --fontFamilly-Inter: inter;
+    --footerblackcolor:rgb(4, 24, 17);
+    --footeremail:rgb(211, 212, 214);
+    --section-height:540px;
+    --colorbeige:rgb(247, 247, 247);
+    --colorbeigefonce:rgb(235,235,235);
+    --burgerIconHoverStyle : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(163,46,0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+h1,h3,h2{
+    font-family:var(--fontFamilly-Inter),'Times New Roman', Times, sans-serif ;
+    color: var(--textColor-lightDark);
+}
+
+.band-marron{
+    background-color: var(--color-marron);
+}
+.band-top{
+    height: 15px;
+}
+
+/*Navbar properties*/
+
+/*logo*/
+.logo{
+    width: 55vw;
+    max-width: 480px;
+    height: 20vw;
+    max-height: 100px;
+}
+
+/*fin*/
+#contact-link{
+    color: var(--color-redMarron);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 7px;
+    display: block;
+    height: 43px;
+    width: 118px;
+    border: 1px solid var(--color-redMarron);
+    transition: background-color 400ms ease-in-out;
+}
+
+.nav-link{
+
+    color: #041811;
+    font-weight: 500;
+}
+#contact-link:hover{
+
+    color: white;
+    background-color: var(--color-redMarron);
+}
+
+.dropdown-menu{
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item{
+
+    transition: background-color 300ms ease-in-out;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: white;
+    background-color: var(--color-redMarron);
+  }
+  .dropdown-item.active, .dropdown-item:active {
+    background-color: var(--color-redMarron);
+  }
+
+.nav-link:hover,.nav-link:focus{
+    color: white!important;
+    background-color: var(--color-redMarron);
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler-icon:hover{
+    background-image: var(--burgerIconHoverStyle);
+}
+.close{
+    font-size: 1.5em;
+    color: var(--textColor-lightDark);
+}
+
+.close:hover{
+    color: var(--color-redMarron);
+}
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+/*Banniere*/
+
+.carousel-item{
+    height: 90vw;
+    min-height: 400px;
+    max-height: 500px;
+}
+
+.carousel-img1{
+    background-image: url("assets/batiment-ipsl-1-scaled.jpg");
+}
+.carousel-img2{
+    background-image: url("assets/ipsl-etudiants-en-tenue.jpeg");
+}
+
+.carousel-img1,.carousel-img2{
+    background-position: center;
+    background-size: cover;
+}
+
+/*background overlay */
+.carousel-overlay::before,#section-performance::before,#join_ipsl::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--textColor-lightDark);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+ aside{
+    background-color: #FFFFFFCC;
+    height: 80%;
+    max-height: 312px;
+    width:100%;
+}
+.carousel a{
+
+    text-decoration: none;
+    color: var(--color-redMarron);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/*FIN*/
+
+/* Section mot du directeur */
+#section-directeur p{
+    color: var(--textColor-lightDark);
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+#lireSuite a{
+    font-family: var(--fontFamilly-Inter),sans-serif;
+    color: var(--textColor-lightDark);
+}
+
+#lireSuite a:hover{
+    color: var(--color-redMarron);
+}
+
+#section-directeur div:first-child h2{
+    color: var(--color-redMarron);
+}
+
+#section-directeur div:first-child h1,#section-directeur div:first-child h2{
+    letter-spacing: 1px;
+}
+#section-directeur img{
+    border-top-left-radius: 50px;
+}
+
+.section-directeur-band{
+    height: 56px;
+}
+
+#section-directeur h3{
+    font-family: var(--fontFamilly-Heebo),sans-serif;
+    width: 200px;
+    height: 118px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    top: calc(97% - 118px);
+    left: calc(90% - 209px)!important;
+}
+
+.h3-span2-section-directeur{
+    color: var(--color-marron);
+}
+/*FIN*/
+
+/*Section-performance*/
+#section-performance{
+    height:450px;
+    background: url(assets/eleves-ingenieurs.jpeg)  no-repeat center ;
+    background-size: cover;
+}
+
+#section-performance img{
+    width: 474px;
+    height: 100px;
+}
+
+#section-performance hr{
+    width: 45vw;
+}
+
+#section-performance p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Fin*/
+
+/*debut adrress*/
+#adr{
+    background-color:var(--colorbeige) ;
+}
+
+.img-container{
+    padding:10px;
+    background-color: var(--color-redMarron);
+}
+.adresse{
+    color: var(--color-redMarron);
+
+}
+#adr img{
+    width: 35px;
+    height: 35px;
+}
+/*Fin adress*/
+
+/*debut footer*/
+
+footer{
+    background-color: var(--textColor-lightDark);
+}
+
+footer li{
+    list-style-image: url(assets/caret-right-solid.svg);
+}
+footer a:hover{
+    color:var(--color-redMarron)!important;
+}
+footer address a:first-child{
+    background-color: rgb(54, 83, 139);
+}
+footer address a:nth-child(2){
+    background-color: rgb(27, 148, 220);
+}
+footer address a:last-child{
+    background-color: rgb(194, 17, 16);
+}
+footer address a:hover{
+    filter: brightness(90%);
+}
+footer input[type="submit"]{
+    background-color: var(--color-redMarron);
+}
+footer input[type="submit"]:hover{
+    border: 1px solid var(--color-redMarron)!important;
+    background-color:var(--textColor-lightDark);    
+}
+.address-footer address, .footer-child{
+    max-width: var(--Max-content-width);    
+}
+
+/*FIN STYLE div address_footer*/
+
+/*Section partenaires */
+#partenaires{
+    height: max-content;
+}
+.partenaire-carousel-item{
+    height: max-content;
+    min-height: max-content;
+}
+figcaption{
+    font-family: inter;
+    color: var(--textColor-lightDark);
+}
+
+/*Fin section partenaires*/
+
+/*Section Projets de Fin d'Etudes*/
+#pfe a{
+    color: var(--textColor-lightDark);
+}
+#pfe a:hover{
+    color: var(--textColor-lightDark);
+}
+#pfe{
+    background-color: rgb(224, 239, 246);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.pfe-box-item h2 span{
+    color: var(--color-redMarron);
+}
+.pfe-box{
+    height: -webkit-max-content ;
+    height: -moz-max-content ;
+    height: -webkit-max-content ;
+    height: -moz-max-content ;
+    height: max-content ;
+}
+#pfe h1{
+    color: var(--textColor-lightDark);
+    font-family:comforta ,sans-serif;
+}
+.pfe-box-item {
+    color: var(--textColor-lightDark);
+    font-family: inter, sans-serif;
+}
+
+/*FIN projet fin d'etudes*/
+
+/* style fablab*/
+
+#fablab{
+    height: max-content;
+    background-color: var(--textColor-lightDark);
+    font-family: heboo, sans-serif;
+}
+
+.background-overlayV2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/fond-fab-lab.png");
+    opacity: 0.08;
+}
+
+.fablab-item:nth-child(2) img{
+    height: 92%;
+}
+
+.fablab-item:first-child img{
+    max-width: 370px;
+    max-height: 75px;
+    height: 16vw;
+    width: 60%;
+}
+#fablab a{
+    background-color:var(--color-redMarron) ;
+    width: 100px;
+}
+#fablab a:hover{
+    background-color: white;
+    color: var(--color-redMarron);
+}
+
+/*Fin style fablab*/
+
+/*Section Actualite*/
+#actu{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-family: inter ,sans-serif;
+    color: var(--textColor-lightDark);
+}
+#actu img{
+    width:100% ;
+    height: 68%;
+}
+.actu-box{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+#actu img[alt="CABINE IPSL"]{
+    max-height: 400px;
+}
+.actu_text,
+.actu_lire{
+    color: var(--textColor-lightDark);
+}
+.actu_text:hover,
+.actu_lire:hover{
+    color: var(--color-redMarron);
+}
+
+.actualite{
+    color: var(--color-redMarron);
+    border: 1px solid var(--color-redMarron);
+}
+.actualite:hover{
+    background-color: var(--color-redMarron);
+    color: white;
+}
+/*Fin section Actualite*/
+
+/* Section Rejoindre l'ipsl*/
+#join_ipsl{
+    font-family: inter, sans-serif;
+    background:url(assets/workspace-of-a-architecture-engineer-2022-04-11-23-15-06-utc-scaled.jpg) no-repeat center;
+    background-size: cover;
+}
+#join-container,#join_ipsl,.join_ipsl-box{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+.join_ipsl-box{
+    max-width: 900px;
+}
+#join_ipsl img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    transform: scaleX(3.5);
+}
+.join_ipsl-box-item{  
+    background-color: #FFFFFF2B;
+}
+
+/*Fin section rejoindre L'ipsl*/
+
+/*Section formation*/
+#formation{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-family: inter, sans-serif;
+}
+.formation-box{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+#formation h1 span:nth-child(1){
+    color: var(--color-redMarron); 
+}
+
+#formation img{
+    width: 40px;
+    height: 40px;
+}
+.circle-img{
+    background-color:var(--colorbeigefonce);
+}
+.formation-box-item{
+    height: 500px;
+    background-position: center;
+    background-color: var(--colorbeige);
+    transition: background-size 0.5s both;
+}
+#formation a{
+    text-decoration: none;
+    background-color: var(--color-redMarron);
+    padding: 10px 15px;
+}
+#formation a:hover{
+    background-color: var(--textColor-lightDark);
+}
+
+#formation h2{
+    color: var(--color-redMarron);
+}
+.formation-box-item:first-child:hover{
+    background-image: linear-gradient(var(--textColor-lightDarkLowOpacity),var(--textColor-lightDarkLowOpacity)),url(assets/genie-civil.jpg);
+}
+.formation-box-item:nth-child(2):hover{
+    background-image: linear-gradient(var(--textColor-lightDarkLowOpacity),var(--textColor-lightDarkLowOpacity)),url(assets/genie-electomeca-scaled.jpg);
+   
+}
+.formation-box-item:nth-child(3):hover{
+    background-image:linear-gradient(var(--textColor-lightDarkLowOpacity),var(--textColor-lightDarkLowOpacity)),url(assets/genie-infotelecom-scaled.jpg) ;
+}
+@-webkit-keyframes slidetop {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+@keyframes slidetop {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes agrandir {
+    from{
+        background-size: 160%;
+    }
+    to{
+        background-size: 180%;
+    }
+}
+@keyframes agrandir {
+    from{
+        background-size: 160%;
+    }
+    to{
+        background-size: 180%;
+    }
+}
+@-webkit-keyframes Animcolor{
+    100%{
+        color: white;
+    }
+}
+@keyframes Animcolor{
+    100%{
+        color: white;
+    }
+}
+
+.formation-box-item:hover div{
+    -webkit-animation: slidetop 500ms both,Animcolor 500ms both;
+            animation: slidetop 500ms both,Animcolor 500ms both;
+}
+.formation-box-item:hover h2{
+    -webkit-animation: slidetop ease-in-out 500ms 200ms both,Animcolor 500ms 200ms both;
+            animation: slidetop ease-in-out 500ms 200ms both,Animcolor 500ms 200ms both;
+}
+.formation-box-item:hover p{
+    -webkit-animation: slidetop ease-in-out 300ms 300ms both,Animcolor 500ms 200ms both;
+            animation: slidetop ease-in-out 300ms 300ms both,Animcolor 500ms 200ms both;
+}
+.formation-box-item:hover a{
+    -webkit-animation: slidetop ease-in-out 300ms 400ms both,Animcolor 500ms 200ms both;
+            animation: slidetop ease-in-out 300ms 400ms both,Animcolor 500ms 200ms both;
+}
+.formation-box-item:hover{
+    -webkit-animation: agrandir 1s both;
+            animation: agrandir 1s both;
+}
+
+/*Section formation Fin*/
+
+/*Media queries*/
+@media screen and (min-width:768px) {
+    #section-performance div:last-child{
+        max-width: 720px;
+        height: 280px;
+    }
+    #section-performance hr{
+        width: 320px;
+    }
+    #section-performance{
+       height:calc(var(--section-height) + 60px);
+    }
+
+    aside{
+        width: 450px;
+    }
+    .section-directeur-band{
+        width: 96px!important;
+        height: 500px!important;
+    }
+
+    #section-directeur{
+        margin-bottom: 80px!important;
+    }
+    #section-directeur img{
+        height: 500px;
+        width: calc(100% - 1.5rem - 96px)!important;
+    }
+    #section-directeur h3{
+        top: 420px;
+        left: calc(95% - 209px)!important;
+    }
+
+    .formation-box-item{
+        height: 550px;
+    }
+
+    /*SECTION ACTU*/
+    .actu-box-item{
+    width: calc(50% - 1.5rem);
+    height: 540px;
+    }
+
+    /*section pfe*/
+    .pfe-box-item{
+        width: 47.7%!important;
+    }
+    /*footer*/
+    #adr{
+        top: 3rem;
+    }
+    .footer-child{
+        padding:0 30px!important;
+    }
+    .footer-button{
+        width: 160px!important;
+    }
+    .footer-abonnement{
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width:712px) {
+    /*partenaire slide*/
+    .carousel-1,.carousel-3{
+        display: none!important;
+    }
+    .carousel-2{
+        display: block!important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .logo{
+        width: 326px;
+        height: 68px;
+    }
+
+    .dropdown-menu{
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown:hover .dropdown-menu{
+    display: block;
+    }
+    .nav-link:hover,.nav-link:focus{
+        color: var(--color-redMarron)!important;
+        background-color:transparent;
+    }
+
+    /*pour la section mot du directeur*/
+    #section-directeur img{
+        width: 370px!important;
+    }
+    /*section pfe*/
+    .pfe-box-item{
+        width: 31.6%!important;
+    }
+
+    /*partenaire slide*/
+    .carousel-1,.carousel-2{
+        display: none!important;
+    }
+    .carousel-3{
+        display: block!important;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+      order: -1; 
+      margin-right: 10px;
+    }
+    .dropdown-toggle::after{
+        float: right;
+        margin-right: 20px;
+    }
+  }
+  @media screen and (max-width:500px) {
+    
+    #section-performance img{
+        height: 24vw;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    /*section fablab*/
+    .fablab-item:nth-child(2) img{
+        width: 664px!important;
+    }
+}
+
+/* Fin */
+
